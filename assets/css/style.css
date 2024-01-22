@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    background: #ECF2F8;
+    font-family: "Manrope", sans-serif;
+}
+ul {
+    list-style: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 800px;
+    padding: 260px 355px; 
+    /* ctrl+ö kısa yoldan yorum satırı yapma
+    padding : top-bottom right-left; 
+    tek satırda üst-alt ve sağ sol için padding verir */ 
+}
+.card{
+    display: flex;
+    flex-shrink: 0px;
+    width: 730px;
+    height: 280px;
+    border-radius: 10px;
+    background: #FFF;
+    /* box-shadow bir HTML öğesininin arka planına gölgelendirme vermek için kullanılır. */
+    /* inner shadow (iç gölgelendirme) özelliğini kullanmak için inset değeri deklarasyonda belirtilmelidir. */
+    /* h-shadow v-shadow blur spread color ->
+       (Gölgenin yataydaki konumudur)  (Gölgenin dikeydeki konumudur) (Bulanıklık yarı çapıdır) (yayılmayı belirtir) (renk)*/
+    box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.50);
+    img {
+        /* flex-shrink:0; diye esnek kap içindeki bir öğeye belirtildiğinde 
+        o öğe büzülmeden diğer öğeler esnek kutudaki kalan alana göre büzülecektir. */
+        flex-shrink: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }  
+}
+.side {
+    display: flex;
+    flex-direction: column;
+    /* height: 280px;  */
+}
+.topText {
+    width: 365px;
+    height: 84px;
+    color: #48556A;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    margin: 32px 40px 0px 40px;
+}
+.explanation{
+    color: #6E8098;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 12px 40px 0px 40px;
+}
+.footer{
+    display: flex;
+    margin-top: 20px;
+    img {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 40px;  
+        margin: 0px 16px 30px 40px;    
+    }
+}
+.spaceShare {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+}
+
+.name{
+    color: #48556A;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.date {
+    color: #9DAEC2;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+
+}
+.nameBox {
+    display: block;
+    a{
+        text-decoration: none;
+    }
+}
+
