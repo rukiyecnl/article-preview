@@ -78,7 +78,6 @@ ul {
     justify-content: space-between;
     width: 330px;
 }
-
 .name{
     color: #48556A;
     font-size: 13px;
@@ -90,7 +89,6 @@ ul {
     font-size: 13px;
     font-weight: 500;
     line-height: 20px;
-
 }
 .nameBox {
     display: block;
@@ -98,4 +96,6 @@ ul {
         text-decoration: none;
     }
 }
-
+.shareLogo{
+    width: 40px;
+}
